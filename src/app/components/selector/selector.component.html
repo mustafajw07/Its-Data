@@ -1,1 +1,18 @@
-<p>selector works!</p>
+<div class="container">
+    <div class="main">
+        <div class="box">
+            <angular2-multiselect [data]="regionOne" [(ngModel)]="regionOneItems" [settings]="dropdownSettings">
+            </angular2-multiselect>
+        </div>
+    
+        <div class="box">
+            <angular2-multiselect [data]="regionTwo" [(ngModel)]="regionTwoItems" [settings]="dropdownSettings">
+            </angular2-multiselect>
+        </div>
+    </div>
+    <div class="button">
+        <button class="btn" (click)="submit()">Submit</button>
+    </div>
+</div>
+
+

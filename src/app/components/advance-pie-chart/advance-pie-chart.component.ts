@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/service/api.service';
 
 @Component({
@@ -6,8 +6,10 @@ import { ApiService } from 'src/app/service/api.service';
   templateUrl: './advance-pie-chart.component.html',
   styleUrls: ['./advance-pie-chart.component.css']
 })
-export class AdvancePieChartComponent implements OnInit {
-
+export class AdvancePieChartComponent implements OnInit , OnChanges {
+  @Input() id! : any;
+  regionId1:any;
+  regionId2:any;
   data: any;
   view: any = [700, 400];
 
@@ -23,13 +25,33 @@ export class AdvancePieChartComponent implements OnInit {
 
   constructor(private api: ApiService) { }
 
-  ngOnInit(): void {
-    this.getApiData();
+  ngOnInit(): void { }
+
+  ngOnChanges(){
+    if(this.id === undefined){
+    }else{
+      this.regionId1 = this.id[0];
+      this.regionId2 = this.id[1];
+      this.getApiData(this.regionId1 , this.regionId2);
+    }
   }
 
-  getApiData() {
-    this.api.getData().subscribe((data) => {
-      this.data = data;
+  getApiData(id1:any , id2 :any){
+    const temp:any = [];
+    this.api.getData().subscribe((data : any) => {
+      data.forEach((e : any) => {
+        if(id1 == e.id){
+          temp.push(e);
+        }
+      });
+    });
+    this.api.getData().subscribe((data : any) => {
+      data.forEach((e : any) => {
+        if(id2 == e.id){
+          temp.push(e);
+        }
+      });
+      this.data = temp;
     });
   }
 

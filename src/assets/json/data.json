@@ -1,17 +1,21 @@
 [
-    {
+    {   
+        "id":1,
         "name": "Germany",
         "value": 8940000
     },
     {
+        "id":2,
         "name": "USA",
         "value": 5000000
     },
     {
+        "id":3,
         "name": "France",
         "value": 7200000
     },
     {
+        "id":4,
         "name": "UK",
         "value": 6200000
     }

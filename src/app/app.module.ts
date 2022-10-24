@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { FormsModule } from '@angular/forms';
 
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -29,9 +31,11 @@ import { SelectorComponent } from './components/selector/selector.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     AppRoutingModule,
-    NgxChartsModule,
     HttpClientModule,
+    NgxChartsModule,
+    AngularMultiSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
