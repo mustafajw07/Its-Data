@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~angular2-multiselect-dropdown/themes/default.theme.css";
+/* 
+background-color: #0e4653;
+color: #d2a438; 
+*/
 *,
 *::after,
 *::before {
@@ -14,4 +18,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f9f5f2;
+}
+
+.custom-class-example {
+  color: #ccc;
+}
+.custom-class-example .c-token{
+  background: #0e4653 !important;
+}
+.custom-class-example .pure-checkbox label::before {
+  border-color: #0e4653 !important;
+}
+.custom-class-example .pure-checkbox input[type="checkbox"]:checked + label[_ngcontent-c1]:before {
+  background: #0e4653 !important;
 }

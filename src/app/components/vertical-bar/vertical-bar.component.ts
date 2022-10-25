@@ -25,7 +25,7 @@ export class VerticalBarComponent implements OnInit , OnChanges{
 
   // Color
   colorScheme:any = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
+    domain: ['#0e4653', '#d2a438'],
   };
 
   constructor(private api: ApiService) { }
