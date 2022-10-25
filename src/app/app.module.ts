@@ -15,6 +15,7 @@ import { VerticalBarComponent } from './components/vertical-bar/vertical-bar.com
 import { AdvancePieChartComponent } from './components/advance-pie-chart/advance-pie-chart.component';
 import { PieChartGridComponent } from './components/pie-chart-grid/pie-chart-grid.component';
 import { SelectorComponent } from './components/selector/selector.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 
@@ -27,6 +28,7 @@ import { SelectorComponent } from './components/selector/selector.component';
     AdvancePieChartComponent,
     PieChartGridComponent,
     SelectorComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

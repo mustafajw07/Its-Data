@@ -12,11 +12,11 @@ export class PieChartComponent implements OnInit ,OnChanges {
   regionId2:any;
   data:any;
 
-  view: any= [700, 400];
+  view: any= [500];
 
   // options
   gradient: boolean = true;
-  showLegend: boolean = true;
+  showLegend: boolean = false;
   showLabels: boolean = true;
   isDoughnut: boolean = false;
   legendPosition:any = 'below';

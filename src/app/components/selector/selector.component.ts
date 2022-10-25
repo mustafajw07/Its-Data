@@ -37,7 +37,7 @@ export class SelectorComponent implements OnInit {
       enableFilterSelectAll:false,
       classes: 'myclass custom-class',
       enableCheckAll:false,
-      lazyLoading:true,
+      limitSelection:1,
     };
   }
   submit(){

@@ -11,13 +11,13 @@ export class VerticalBarComponent implements OnInit , OnChanges{
   regionId1:any;
   regionId2:any;
   data: any;
-  view:any = [700, 400];
+  view:any = [400];
 
   // Options
   showXAxis = true;
   showYAxis = true;
   gradient = false;
-  showLegend = true;
+  showLegend = false;
   showXAxisLabel = true;
   xAxisLabel = 'Country';
   showYAxisLabel = true;
