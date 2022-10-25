@@ -14,10 +14,9 @@ color: #d2a438;
 
 body {
   margin: 0;
-  font-family: "Teko";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f5f2;
+  background-color: #4da2b4;
 }
 
 .custom-class-example {
